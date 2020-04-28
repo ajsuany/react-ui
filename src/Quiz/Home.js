@@ -82,7 +82,7 @@ export default class Home extends Component{
                 default :  return( 
                                <div className='App'>
                                <div> {this.state.totalScore || 'This is home page of the quiz'}  </div>
-                               <button onClick={this.nextStep}>Start Quiz </button>
+                               <button className = 'btn'onClick={this.nextStep}>Start Quiz </button>
                                
                             </div>
                        )

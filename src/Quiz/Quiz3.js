@@ -42,19 +42,19 @@ export default class Quiz3 extends Component{
                     
                     return(<div> 
                           
-                          <p> Q3. 2+4= ? </p>
+                          <p className="mark"> Q3. 2+4= ? </p>
                                 <div className="option">
-                                <div onClick={this.selectedOpt} > 3 </div>  
-                                <div onClick={this.selectedOpt} > 4 </div>  
-                                <div onClick={this.selectedOpt} > 5 </div>  
-                                <div onClick={this.selectedOpt} > 6 </div>
+                                <div className = 'opt' onClick={this.selectedOpt} > 3 </div>  
+                                <div className = 'opt' onClick={this.selectedOpt} > 4 </div>  
+                                <div className = 'opt' onClick={this.selectedOpt} > 5 </div>  
+                                <div className = 'opt' onClick={this.selectedOpt} > 6 </div>
                                 </div>
-                    <div>Scored Mark:{this.state.score}</div> 
-                                 <div>
-                                     <button onClick={this.continue}>
+                    <div className="mark">Scored Mark:{this.state.score}</div> 
+                                 <div className='submt'>
+                                     <button className='btn' onClick={this.continue}>
                                        Next Quiz
                                      </button>
-                                     <button onClick={this.back}>
+                                     <button className='btn' onClick={this.back}>
                                          Back Quiz
                                      </button>
                                  </div>

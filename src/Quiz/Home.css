@@ -3,4 +3,39 @@
     text-align: center;
     display: block;
     box-sizing: border-box;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.btn{
+    border-color: crimson;
+    border-radius: 19px;
+    font-family: auto;
+    font-style: initial;
+    margin: 4px;
+    padding: 7px;
+    background-color: brown;
+    cursor: pointer;
+    display: inline-flex;
+}
+.option{
+    background-color: gold;
+    display: inline-block;
+    margin: 3px;
+    padding: 26px;
+    border-radius: 13px;
+    margin-bottom: 7px;
+    margin-top: 4px;
+}
+.opt{
+    font-size: x-large;
+    cursor: pointer;
+    background-color: crimson;
+    border-radius: 28px;
+    padding-left: 13px;
+    padding-right: 11px;
+    border-color: skyblue;
+    margin-top: -13px;
+    margin-bottom: 22px;
 }
