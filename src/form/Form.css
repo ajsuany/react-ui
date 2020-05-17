@@ -1,0 +1,21 @@
+.f-data{
+    display: inline-grid;
+    background: black;
+    align-items: center;
+    margin-left: 317px;
+    border: solid;
+}
+.lb-data{
+    color: azure;
+    padding-top: 7px;
+    padding-bottom: 4px;
+}
+.txt-data{
+
+}
+.btn-data{
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    background: greenyellow;
+}

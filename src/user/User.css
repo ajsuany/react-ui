@@ -1,0 +1,46 @@
+.user{
+    border: 2px solid #ccc;
+    padding: 8px 16px;
+    background: dimgray;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+li, ul {
+    list-style-type: none;
+}
+.user-atrb{
+    flex: 1;
+}
+.user-delete{
+    flex: 1 1;
+    border-radius: 22px;
+    background: black;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 1px;
+    padding-top: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.user-edit{
+    flex: 1 1;
+    border-radius: 22px;
+    background: black;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 1px;
+    padding-top: 8px;
+    cursor: pointer
+}
+.user-edit{
+  cursor: pointer;
+  background-color: black;
+  color: azure;
+}
+.user-delete{
+    cursor: pointer;
+    background-color: black;
+    color: azure;
+
+}
