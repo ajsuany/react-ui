@@ -1,0 +1,26 @@
+.container{
+    background: magenta;
+    display: flex;
+    justify-content: space-between;
+    color: cornsilk;
+    margin-left: 0px;
+    margin-bottom: 1px;
+    padding-bottom: 14px;
+    padding-top: 23px;
+}
+.s-data{
+    margin-right: 11px;
+    font-family: initial;
+    font-size: 22px;
+}
+.a-data{
+    margin-right: 13px;
+}
+.c-data{
+
+}
+.h-icon{
+    margin-left: 20px;
+    font-family: initial;
+    font-size: 22px;
+}

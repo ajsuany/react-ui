@@ -1,7 +1,7 @@
 .user{
     border: 2px solid #ccc;
     padding: 8px 16px;
-    background: dimgray;
+    background: magenta;
     display: flex;
     justify-content: space-between;
     margin-top: 16px;
@@ -11,36 +11,42 @@ li, ul {
 }
 .user-atrb{
     flex: 1;
+    color: cornsilk;
 }
 .user-delete{
     flex: 1 1;
     border-radius: 22px;
-    background: black;
-    color: aliceblue;
+    background: magenta;
+    color: cornsilk;
     text-align: center;
     margin-top: 1px;
-    padding-top: 8px;
+    
     cursor: pointer;
     margin-left: 10px;
+    border: double;
 }
 .user-edit{
     flex: 1 1;
     border-radius: 22px;
-    background: black;
-    color: aliceblue;
+    background: magenta;
+    
     text-align: center;
     margin-top: 1px;
-    padding-top: 8px;
+   
+    border: double;
     cursor: pointer
 }
 .user-edit{
   cursor: pointer;
-  background-color: black;
-  color: azure;
+  background-color: magenta;
+  color: cornsilk;
+  padding-top: 0px;
 }
 .user-delete{
     cursor: pointer;
-    background-color: black;
-    color: azure;
+  background-color: magenta;
+  color: cornsilk;
+  padding-top: 0px;
+  
 
 }

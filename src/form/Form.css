@@ -1,21 +1,39 @@
 .f-data{
     display: inline-grid;
-    background: black;
-    align-items: center;
-    margin-left: 317px;
+    background: magenta;
+    
+    border: chocolate;
+    border-color: azure;
+    padding-left: 41px;
+    padding-right: 41px;
+    padding-bottom: 45px;
+    padding-top: 41px;
     border: solid;
+    
+    border-radius: 21px;
+    
+    border-color: cornsilk;
 }
 .lb-data{
-    color: azure;
+    color: cornsilk;
     padding-top: 7px;
     padding-bottom: 4px;
+    text-align: initial;
 }
 .txt-data{
-
+    background-color: plum;
+    color: currentColor;
+    font-family: cursive;
 }
 .btn-data{
-    color: black;
+    color: cornsilk;
     text-align: center;
     cursor: pointer;
-    background: greenyellow;
+    margin-top: 31px;
+    background-color: plum;
+}
+.f-container
+{
+    display: block;
+    text-align: center;
 }

@@ -10,6 +10,7 @@ export default class Form extends PureComponent {
               name : "",
               address : "",
               gender : "",
+              _id :undefined
           }
       }
       onChangedNmae = (e) => {
@@ -25,9 +26,10 @@ export default class Form extends PureComponent {
             this.setState({gender})
     }
     doSomething = (e) => {
-        let {name,address,gender} = this.state
+        let {name,address,gender,_id} = this.state
         e.preventDefault();
-        if(name && address && gender){
+        if(name && address && gender && !_id){
+            console.log("no update >>>>>>_id",_id)
         axios.post("http://localhost:3000/users",{
             name : name,
             address : address,
@@ -39,8 +41,23 @@ export default class Form extends PureComponent {
         }).catch(error => {
             console.log("error ",error)
         })
+    }else if(name && address && gender && _id){
+        console.log("dosomthing >>>>>>_id",_id)   
+         axios.put(`http://localhost:3000/users/${_id}`,{
+            name : name,
+            address : address,
+            gender : gender
+        })
+         .then(response =>{
+            console.log("response ",response.data)
+            this.props.responseData(response.data)
+
+        }).catch(error => {
+            console.log("error ",error)
+        })
     }
      }
+    
 componentDidUpdate(prevProps,prevState){
     let {_id,name,address,gender} = this.props.editRow
     console.log("did update >>>>>",this.props.editRow)
@@ -51,12 +68,13 @@ componentDidUpdate(prevProps,prevState){
     {
         console.log("No need to change");
     }else{
-        this.setState({name,address,gender})
+        this.setState({name,address,gender,_id})
     }
 }
 render(){
       console.log("Form state >>>>",this.state)
     return(
+        <div className='f-container'>
           <form className="f-data" onSubmit={this.doSomething}>
           <label className="lb-data"  > User Name </label>
           <input type="text" className="txt-data" onChange = {this.onChangedNmae} value = {this.state.name} />
@@ -70,6 +88,7 @@ render(){
           </select>
           <button className="btn-data" onSubmit = {this.onSubmittedForm}  > Submit </button>
           </form>
+          </div>
     )
 
 }
